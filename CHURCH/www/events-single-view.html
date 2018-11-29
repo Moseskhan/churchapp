@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+    <title>Event</title>
+    <meta name="description" content="Church App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="author" content="Blessed Edge Software Technologies" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file: ms-appdata: cdvfile: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline' https://*.blessededge.com; img-src 'self' data: http://* https://* 'unsafe-inline'; script-src 'self' https://youtube.com http://*.googleapis.com https://*.googleapis.com 'unsafe-inline'; connect-src 'self' https://*.blessededge.com 'unsafe inline'" />
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="app_assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app_assets/css/style.css">
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="app_assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="app_assets/css/footers/footer-v1.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="app_assets/plugins/animate.css">
+    <link rel="stylesheet" href="app_assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="app_assets/plugins/font-awesome/css/font-awesome.min.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="app_assets/css/theme-colors/default.css" id="style_color">
+    <!-- CSS Customization -->
+	<link href="jqueryui/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href="customcss/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="app_assets/css/custom.css">	
+    <script src="amplify/amplify.js"></script>
+    <link rel="stylesheet" href="loadermodal/css/jquery.loadingModal.css">
+</head>
+<body class="new-bg-color-light2">
+    <div class="footer">
+                <!-- Logo -->
+                 <div class="navbar navbar-inverse">
+                <a class="logo" href="index.html">
+                    <img  class="centerImage img-responsive" id="logoimage" width="300px" height="300px">
+                </a>
+                </div>
+</div>
+  <div class="wrapper new-bg-color-light2">
+        <!--=== Header ===-->
+        
+        <!--=== End Header ===-->
+        <!--=== Breadcrumbs ===-->
+        <div class="breadcrumbs">
+            <div class="container">
+                
+               
+                <button type="button" class="btn btn-u-xs btn-u  rounded-2x btn-sm pull-left" onclick=goBack() >
+                 <i class="fa fa-arrow-left"></i></button>
+            </div><!--/container-->
+        </div>
+
+        <div class="container content">
+            <div class="headline"><h4  id="titleparentsermon" ></h4></div>
+<!--      <div class="service-block-v8">-->
+          <div class="row" id="eventdetails">       
+          </div>
+            <div class="row">
+				
+          <div id="files">
+			  
+          </div>
+        </div>
+<!--    </div>-->
+     <div id="map" class="map" >
+		 
+      </div>
+			 <div id="showImage" height="100%">
+		  <button class="btn btn-u btn-u-xs rounded-2x pull-right ui-dialog-top-button"  onclick="saveimage()">Save <span class="fa fa-download"></span>
+              </button>
+		  <canvas id="myCanvas" ></canvas>
+		  </div>
+               <div id="shownetworkstatus">
+              
+          </div>
+               <br><br>
+                <div id="menudiv" >
+      
+      </div>
+        </div>
+    </div>
+  
+    
+   
+     
+   
+    
+    
+ <!-- /#page-content -->
+     <script src="cordova.js" id="xdkJScordova_"></script>
+   
+   <script src="customjs/networkstate.js"></script>
+        <script src="js/app.js"></script>
+        
+        
+        <script src="js/init-app.js"></script>
+     
+    <script type="text/javascript" src="customjs/customjs.js"></script>
+       
+    <script src="xdk/init-dev.js"></script>
+    
+    <script type="text/javascript" src="app_assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="app_assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="app_assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="app_assets/plugins/smoothScroll.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="app_assets/js/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="app_assets/js/app.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script src="dist/js/common.js"></script>
+    <script src="loadermodal/js/jquery.loadingModal.js"></script>
+	<script src="customjs/moment.js"></script>
+    <script type="text/javascript" src="js/events-single-view.js"></script>
+</body>
+</html>

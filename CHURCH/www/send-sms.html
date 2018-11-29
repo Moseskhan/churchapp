@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+    <title>Text</title>
+    <meta name="description" content="Church App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="author" content="Blessed Edge Software Technologies" />
+	<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready ms-appdata: cdvfile: file: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline' https://*.blessededge.com; img-src 'self' data: http://* https://* 'unsafe-inline'; script-src 'self' https://youtube.com http://*.googleapis.com https://*.googleapis.com 'unsafe-inline'; connect-src 'self' https://*.blessededge.com 'unsafe inline'" />
+ <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+     <link href="customcss/common.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/common.css" rel="stylesheet" type="text/css" />
+    <script src="amplify/amplify.js"></script>
+    <link rel="stylesheet" href="loadermodal/css/jquery.loadingModal.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  
+ <div class="footer">
+                <!-- Logo -->
+                 <div class="navbar navbar-inverse">
+                <a class="logo" href="index.html">
+                    <img  class="centerImage img-responsive" id="logoimage" width="300px" height="300px">
+                </a>
+                </div>
+</div>
+  <div class="breadcrumb container">
+   
+   
+     <button type="button" class="btn btn-u-xs btn-u  rounded-2x btn-sm pull-left" onclick=goBack() >
+                 <i class="fa fa-arrow-left"></i></button>
+      
+    </div>
+  
+  <!--wrap the page content do not style this-->
+ <div >
+   
+  <div class="container">
+    
+      <div class="row container" id="sermontitle">
+          <div class="card">
+  <div class="header">
+        <h4 class="breadcrumb" id="titletopicspage">Send Sms</h4>
+  </div>
+
+  <div class="container">
+  <div class="row" >
+      <div class="col-md-12">
+      
+      
+    <input id="numberTxt" placeholder="Enter mobile number" class="form-control" value="" type="tel" />
+          <br>
+<textarea id="messageTxt" placeholder="Enter message" class="form-control"></textarea><br>
+<input type="button" onclick="app.sendSms()" value="Send SMS" class="btn btn-primary" />
+    </div>  </div></div>
+</div>
+      
+      </div>
+      
+    <div id="shownetworkstatus">
+              
+          </div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+
+
+    <div id="menudiv">
+      
+      </div>
+    
+   </div>
+  <!-- /.container -->
+  
+ </div>
+ <!-- /#page-content -->
+     <script src="cordova.js" id="xdkJScordova_"></script>
+ <script src="customjs/networkstate.js"></script>
+        <script src="js/app.js"></script>
+        
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+    <script src="xdk/init-dev.js"></script>
+    
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+     <script src="lib/jquery.min.js"></script>
+    <script src="dist/js/common.js"></script>
+    <script src="loadermodal/js/jquery.loadingModal.js"></script>
+    <script type="text/javascript" src="customjs/customjs.js"></script>
+    <script type="text/javascript" src="js/send-sms.js"></script>
+    
+</body>
+</html>

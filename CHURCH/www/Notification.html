@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+    <title>Notification</title>
+    <meta name="description" content="Church App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="author" content="Blessed Edge Software Technologies" />
+	<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file: ms-appdata: cdvfile: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline' https://*.blessededge.com; img-src 'self' data: http://* https://* 'unsafe-inline'; script-src 'self' https://youtube.com http://*.googleapis.com https://*.googleapis.com 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://*.blessededge.com 'unsafe inline'" />
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="app_assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app_assets/css/style.css">
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="app_assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="app_assets/css/footers/footer-v1.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="app_assets/plugins/animate.css">
+    <link rel="stylesheet" href="app_assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="app_assets/plugins/font-awesome/css/font-awesome.min.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="app_assets/css/theme-colors/default.css" id="style_color">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="app_assets/css/custom.css">	
+         <link href="jqueryui/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="amplify/amplify.js"></script>
+    <link rel="stylesheet" href="loadermodal/css/jquery.loadingModal.css">
+     <link href="customcss/common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="footer">
+                <!-- Logo -->
+                 <div class="navbar navbar-inverse">
+                <a class="logo" href="index.html">
+                    <img  class="centerImage img-responsive" id="logoimage" width="300px" height="300px">
+                </a>
+                </div>
+</div>
+  <div class="wrapper margin-bottom-120">
+	  <div class="new-bg-color-light2">
+	  
+	  
+        <!--=== Header ===-->
+        
+        <!--=== End Header ===-->
+        <!--=== Breadcrumbs ===-->
+        <div class="breadcrumbs">
+            <div class="container">
+                
+               
+                <button type="button" class="btn btn-u-xs btn-u  rounded-2x btn-sm pull-left" onclick=goBack() >
+                 <i class="fa fa-arrow-left"></i></button>
+            </div><!--/container-->
+        </div>
+
+        <div class="container content">
+            <div class="headline"> <h2  id="titlenotificationpage">Notifications</h2></div>
+            <div id="pagedescription">
+            </div>
+       <div class="service-block-v8 thumbnails thumbnail-style hidden" id="groupsSelectionDiv">
+           <div class="container">
+           <a class="btn btn-u btn-u-xs pull-right" href="#notificationdiv" id="sendbtn" onclick="showSendNotifications()"> Send <span class="fa fa-chevron-down"></span> </a>
+           </div>
+            <div class="form-group">
+           
+           <select id="selectGroupID" class="form-control"></select>
+           </div>
+            
+            </div>
+             <div id="notificationslist">
+            
+            </div>
+             
+      <div class="service-block-v8 thumbnails thumbnail-style" id="notificationdiv">
+                         
+            <br>
+      
+          <div class="row">
+              
+           <div class="col-xs-12" >
+        <h4>Select group to send notification to</h4>
+          <div class="form-group" id="groupsdiv">
+              
+              </div>
+               <br>
+          </div>
+             <div class=" col-xs-12">
+              <div class="form-group">
+              <input type="text" class="form-control" id="title" placeholder="Title"/>
+              </div>
+          
+          </div> 
+          <div class=" col-xs-12">
+              <div class="form-group">
+              <textarea class="form-control" rows="5" id="message" placeholder="Notification Text"></textarea>
+              </div>
+          
+          </div>
+          
+         
+          
+             <div class="col-xs-12">
+              <button class="btn btn-u btn-u-xs rounded-2x  btn-xs  pull-right" onclick="validateNotification()"> Send <span class="fa fa-arrow-right"></span></button> 
+              </div> 
+          
+          </div><br>
+          <div id="status" class="hidden"></div>
+      </div>
+      
+          <div id="shownetworkstatus">
+              
+          </div>
+               <br><br>
+                
+        </div></div>
+    </div>
+  <div id="menudiv" >
+      
+      </div>
+    
+   
+     
+   
+    
+    
+ <!-- /#page-content -->
+     
+    
+    
+   
+    
+    <script src="cordova.js" id="xdkJScordova_"></script>
+   
+   <script src="customjs/networkstate.js"></script>
+        <script src="js/app.js"></script>
+        
+        
+        <script src="js/init-app.js"></script>
+     
+    <script type="text/javascript" src="customjs/customjs.js"></script>
+       
+    <script src="xdk/init-dev.js"></script>
+    
+    
+   
+    
+    <script type="text/javascript" src="app_assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="app_assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="app_assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="app_assets/js/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="app_assets/js/app.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+     
+    <script src="dist/js/common.js"></script>
+    <script src="loadermodal/js/jquery.loadingModal.js"></script>
+    <script type="text/javascript" src="js/notifications.js"></script>
+
+</body>
+</html>

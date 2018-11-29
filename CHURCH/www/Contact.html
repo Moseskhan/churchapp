@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="description" content="Church App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="author" content="Blessed Edge Software Technologies" />
+	<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file: ms-appdata: cdvfile: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline' https://*.blessededge.com; img-src 'self' data: http://* https://* 'unsafe-inline'; script-src 'self' https://youtube.com http://*.googleapis.com https://*.googleapis.com 'unsafe-inline'; connect-src 'self' https://*.blessededge.com 'unsafe inline'" />
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="app_assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app_assets/css/style.css">
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="app_assets/css/headers/header-default.css">
+    <link rel="stylesheet" href="app_assets/css/footers/footer-v1.css">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="app_assets/plugins/animate.css">
+    <link rel="stylesheet" href="app_assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="app_assets/plugins/font-awesome/css/font-awesome.min.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="app_assets/css/theme-colors/default.css" id="style_color">
+    <!-- CSS Customization -->
+	<link href="jqueryui/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="customcss/common.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="app_assets/css/custom.css" />
+    <script src="amplify/amplify.js"></script>
+    <link rel="stylesheet" href="loadermodal/css/jquery.loadingModal.css"> 
+</head>
+<body>
+   <div class="footer">
+                <!-- Logo -->
+                 <div class="navbar navbar-inverse">
+                <a class="logo" href="index.html">
+                    <img  class="centerImage img-responsive" id="logoimage" width="300px" height="300px">
+                </a>
+                </div>
+</div>
+  <div class="wrapper">
+	    <div class="new-bg-color-light2 margin-bottom-50">
+
+        <!--=== Header ===-->
+        
+        <!--=== End Header ===-->
+        <!--=== Breadcrumbs ===-->
+        <div class="breadcrumbs">
+            <div class="container">
+                
+               
+                <button type="button" class="btn btn-u-xs btn-u  rounded-2x btn-sm pull-left" onclick=goBack() >
+                 <i class="fa fa-arrow-left"></i></button>
+            </div><!--/container-->
+        </div>
+
+        <div class="container content">
+            <div class="headline"><h2  id="titlecontactpage"></h2></div>
+            <div id="pagedescription">
+            </div>
+        <div class="row" id="contactuscontent">
+           <form id="postcontactform">
+          <div class="col-xs-12 col-md-4">
+           <div class="form-group input-group">
+               <input class="form-control" type="text" placeholder="First Name *" id="firstname" required>
+               <span class="input-group-addon">
+        <span class="fa fa-user"></span>
+      </span>
+              </div>
+           </div><div class="col-md-12 col-xs-12">
+              <div class="form-group input-group">
+               <input class="form-control" type="text" placeholder="Last Name *" id="lastname" required>
+                  <span class="input-group-addon">
+        <span class="fa fa-user"></span>
+      </span>
+              </div>
+           </div>
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group input-group">
+               <input class="form-control" type="email" placeholder="Email *" id="email" required>
+                  <span class="input-group-addon">
+        <span class="fa fa-envelope"></span>
+      </span>
+              </div>
+           </div>
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group">
+               <input class="form-control" type="number" placeholder="Phone Number *" id="phonenumber" required>
+                  
+              </div>
+           </div>
+<!--
+           <div class="col-md-6 col-xs-12">
+              <div class="form-group input-group">
+               <input class="form-control" type="text" placeholder="Occupation" id="occupation">
+                  <span class="input-group-addon">
+        <span class="fa fa-tag"></span>
+      </span>
+              </div>
+           </div>
+-->
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group input-group">
+               <input class="form-control" type="text" placeholder="Address *" id="addressline1" required>
+                  <span class="input-group-addon">
+        <span class="fa fa-map-marker"></span>
+      </span>
+              </div>
+           </div>
+<!--
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group input-group">
+               <input class="form-control" type="text" placeholder="Address Line 2" id="addressline2">
+                  <span class="input-group-addon">
+        <span class="fa fa-map-marker"></span>
+      </span>
+              </div>
+           </div>
+-->
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group input-group">
+               <input class="form-control" type="text" placeholder="City *" id="city" required>
+                  <span class="input-group-addon">
+        <span class="fa fa-map-marker"></span>
+      </span>
+              </div>
+           </div>
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group input-group">
+               <input class="form-control" type="text" placeholder="State/Province/County *" id="state" required>
+                  <span class="input-group-addon">
+        <span class="fa fa-map-marker"></span>
+      </span>
+              </div>
+           </div>
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group">
+                  <select class="form-control"  id="countryid" required >
+                  <option value="0">--Country --</option>
+                  </select>
+              </div>
+           </div>
+           
+           <div class="col-md-4 col-xs-12">
+              <div class="form-group">
+                  <select class="form-control"  id="groupcategory" required >
+                  <option value="0">--Category--</option>
+                  </select>
+              </div>
+           </div>
+           <div class="col-md-6 col-xs-12">
+              <div class="form-group">
+                  <textarea class="form-control"  placeholder="Type here to share with us"  id="contacttext" required rows="5"></textarea>
+              </div>
+           </div>
+           <div class="col-md-12 col-xs-12">
+              <div class="form-group pull-right">
+               <button class="btn btn-u btn-u-xs rounded-2x" >Share  Testimony <span class="fa fa-arrow-right"></span></button>
+              </div>
+           </div>
+      
+               </form>
+            
+          <div id="shownetworkstatus">
+              
+          </div>
+               
+                
+        </div>
+    </div>
+			<div class="scrollerdiv"><br/><br/></div>
+    <div id="menudiv" >
+      
+      </div>
+	    </div>
+	</div>
+	
+  
+ <!-- /#page-content -->
+    <script src="cordova.js" id="xdkJScordova_"></script>
+    <script src="customjs/networkstate.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/init-app.js"></script>
+    <script type="text/javascript" src="customjs/customjs.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="text/javascript" src="app_assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="app_assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="app_assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="app_assets/plugins/smoothScroll.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="app_assets/js/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="app_assets/js/app.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script src="dist/js/common.js"></script>
+    <script src="loadermodal/js/jquery.loadingModal.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+</body>
+</html>

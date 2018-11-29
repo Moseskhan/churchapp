@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file: ms-appdata: cdvfile: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline' https://*.blessededge.com; img-src 'self' data: http://* https://* 'unsafe-inline'; script-src 'self' https://youtube.com http://*.googleapis.com https://*.googleapis.com 'unsafe-inline'; connect-src 'self' https://*.blessededge.com 'unsafe inline'" />
+    <title>Directions</title>
+      <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+     <link href="customcss/common.css" rel="stylesheet" type="text/css" />
+    <link href="third-party-css/accordion-groupspage.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/common.css" rel="stylesheet" type="text/css" />
+    <script src="amplify/amplify.js"></script>
+    <link rel="stylesheet" href="loadermodal/css/jquery.loadingModal.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 80%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+    </style>
+      <script src="amplify/amplify.js"></script>
+  </head>
+  <body>
+    
+    
+    <div id="map"></div>
+      <br>
+      <div class="row container">
+          
+          <div class="col-xs-6 col-md-6">
+          <button class="btn btn-success" onclick=opennavigator()><span class="fa fa-map-marker"></span> Use Navigator</button>
+          </div>
+            <div class="col-xs-6 col-md-6">
+          <button type="button" class="btn btn-info pull-left" onclick=goBack() >
+                                            <i class="fa fa-arrow-left"></i> Go Back
+      </button>
+          </div>
+
+      </div>
+    <div id="right-panel"></div>
+      <div id="menudiv">
+
+            </div>
+  
+   
+    <script src="cordova.js" id="xdkJScordova_"></script>
+    <script src="customjs/networkstate.js"></script>
+      <script src="customjs/geolocation.js"></script>
+    <script src="js/app.js"></script>
+      
+    <!-- for your event code, see README and file comments for details -->
+    <script src="js/init-app.js"></script>
+    <!-- for your init code, see README and file comments for details -->
+    <script src="xdk/init-dev.js"></script>
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="dist/js/common.js"></script>
+    <script src="loadermodal/js/jquery.loadingModal.js"></script>
+    <script type="text/javascript" src="js/more-menu.js"></script>
+    <script type="text/javascript" src="customjs/customjs.js"></script>
+    
+  </body>
+</html>
